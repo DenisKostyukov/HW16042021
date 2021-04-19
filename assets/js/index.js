@@ -4,8 +4,8 @@
     checkAnagram('aab', 'abb') // false 
 */
 function checkAnagram(firstString, secondString) {
-  arrayStr1 = firstString.toLowerCase().split('').sort();
-  arrayStr2 = secondString.toLowerCase().split('').sort();
+  const arrayStr1 = firstString.toLowerCase().split('').sort();
+  const arrayStr2 = secondString.toLowerCase().split('').sort();
   return arrayStr1.length === arrayStr2.length && arrayStr1.every((symbol, index) => arrayStr2[index] === symbol);
 
 }
